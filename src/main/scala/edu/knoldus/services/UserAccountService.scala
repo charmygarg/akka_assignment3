@@ -8,8 +8,8 @@ class UserAccountService {
   val accountInfo = Account(768574657L, "Charmy", "Noida", "charmygarg", 4000)
 
   def addUser(account: Account) = {
-    DatabaseRepo.list += account
-    DatabaseRepo.list += accountInfo
+    DatabaseRepo.database += (account.accNo -> (account, Nil))
+    DatabaseRepo.database += (accountInfo.accNo -> (accountInfo, Nil))
   }
 
 }

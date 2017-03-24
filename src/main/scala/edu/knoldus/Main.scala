@@ -17,6 +17,8 @@ object Main extends App {
   implicit val timeout = Timeout(1000 seconds)
   import scala.concurrent.ExecutionContext.Implicits.global
 
+  val account = Account(87687979L, "Simar", "Delhi", "ksimar", 8000)
+
   val result0 = accountGeneratorRef ? Account(87687979L, "Simar", "Delhi", "ksimar", 8000)
   result0 map println
 
@@ -28,7 +30,7 @@ object Main extends App {
 
   val billerService = new BillerService
   val biller = Biller("car", "Simar", 87687979L, "2/1/2017", 200, 0, Iterations(0,0))
-  val billProcessorRef = system.actorOf(Props(classOf[BillProcessorActor], billerService, biller))
+  val billProcessorRef = system.actorOf(Props(classOf[BillProcessorActor], billerService, account, biller))
   val result3 = billProcessorRef ? biller.category
   result3 map println
 

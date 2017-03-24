@@ -13,8 +13,8 @@ class SalaryDepositActor(salaryDepositService: SalaryDepositService) extends Act
   }
 
   def depositSalary(amount: Float, account: Account, username: String) = {
-    val user = DatabaseRepo.list.map(_.username)
-    if(account.username.contains(user.head)) {
+    val user = DatabaseRepo.database(account.accNo)
+    if(account.username.contains(user._1.username)) {
       sender() ! salaryDepositService.addAmount(amount, account)
       log.info("Salary has been added to account")
     } else {
