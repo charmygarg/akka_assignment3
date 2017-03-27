@@ -1,6 +1,7 @@
 [debug] Other repositories:
 [debug] Default repositories:
 [debug] Using inline dependencies specified in Scala.
+[debug] no default cache defined: set to /home/knodus/.ivy2/cache
 [debug] :: resolving dependencies :: default#akkauserbilling$sbt_2.11;1.0
 [debug] 	confs: [default]
 [debug] 	validate = true
@@ -27,7 +28,6 @@
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#main;0.13.7
 [debug] 	found org.scala-sbt#main;0.13.7 in sbt-chain
 [debug] == resolving dependencies org.scala-sbt#main;0.13.7->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
-[debug] no default cache defined: set to /home/knodus/.ivy2/cache
 [debug] == resolving dependencies org.scala-sbt#main;0.13.7->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#main;0.13.7->org.scala-lang#scala-library;2.10.4 [compile->compile]
 [debug] == resolving dependencies org.scala-sbt#main;0.13.7->org.scala-lang#scala-library;2.10.4 [compile->master]
@@ -800,9 +800,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.7!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.6!scala-library.jar
-[debug] :: resolution report :: resolve 609ms :: artifacts dl 41ms
+[debug] :: resolution report :: resolve 4147ms :: artifacts dl 47ms
 [debug] 	report for default#akkauserbilling$sbt_2.11;1.0 default produced in /home/knodus/Downloads/AkkaUserBilling/target/resolution-cache/reports/default-akkauserbilling$sbt_2.11-default.xml
-[debug] 	resolve done (609ms resolve - 41ms download)
+[debug] 	resolve done (4147ms resolve - 47ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#akkauserbilling$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1216,6 +1216,6 @@
 [debug] 	[NOT REQUIRED] org.scalastyle#scalastyle_2.10;0.8.0!scalastyle_2.10.jar(src)
 [debug] 	[NOT REQUIRED] org.scalariform#scalariform_2.10;0.1.7!scalariform_2.10.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.2.0!config.jar(src)
-[debug] :: resolution report :: resolve 174ms :: artifacts dl 24ms
+[debug] :: resolution report :: resolve 291ms :: artifacts dl 40ms
 [debug] 	report for default#akkauserbilling$sources_2.11;1.0 default produced in /home/knodus/Downloads/AkkaUserBilling/target/resolution-cache/reports/default-akkauserbilling$sources_2.11-default.xml
-[debug] 	resolve done (174ms resolve - 24ms download)
+[debug] 	resolve done (291ms resolve - 40ms download)
